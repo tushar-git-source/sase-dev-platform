@@ -41,3 +41,15 @@ jobs:
 
       - name: Secret scan
         uses: gitleaks/gitleaks-action@v2
+
+  build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t devex-app:latest .
