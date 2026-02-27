@@ -48,6 +48,11 @@ jobs:
       - name: Repository hygiene check
         run: python scripts/repo_hygiene.py
 
+      - name: Generate PR Summary
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/ai_pr_summary.py
+
   build:
     name: Build Docker Image
     runs-on: ubuntu-latest
