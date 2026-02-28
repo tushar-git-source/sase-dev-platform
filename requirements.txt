@@ -3,3 +3,4 @@ requests==2.32.4
 pytest
 flake8
 pip-audit
+openai

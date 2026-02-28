@@ -14,3 +14,6 @@ lint:
 
 clean:
 	docker compose down -v --remove-orphans
+
+docs:
+	python scripts/ai_pr_summary.py
