@@ -5,7 +5,7 @@ from datetime import datetime
 
 def get_git_diff():
     result = subprocess.run(
-        "git diff origin/main...HEAD",
+        "git diff HEAD~1 HEAD",
         shell=True,
         capture_output=True,
         text=True
