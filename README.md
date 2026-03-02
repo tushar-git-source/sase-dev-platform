@@ -26,15 +26,4 @@ The solution consists of:
 - Security scanning (dependencies + secrets)
 
 
-.
-├── app.py
-├── requirements.txt
-├── Dockerfile
-├── docker-compose.yml
-├── Makefile
-├── tests/test_app.py
-├── scripts/
-│ ├── repo_hygiene.py
-│ └── ai_pr_summary.py
-├── docs/
-└── .github/workflows/ci.yml
+
