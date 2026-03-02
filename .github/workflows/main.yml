@@ -1,5 +1,7 @@
 name: CI Pipeline
 
+permissions:
+  contents: write
 on:
   pull_request:
     branches:
@@ -52,6 +54,20 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/ai_pr_summary.py
+
+      - name: Commit PR Summary
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add docs/PR_SUMMARY.md
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+           git commit -m "Auto-update PR summary [skip ci]"
+           git push
+          fi
 
   build:
     name: Build Docker Image
