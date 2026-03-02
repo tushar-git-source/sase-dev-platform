@@ -25,5 +25,23 @@ The solution consists of:
 - AI-based PR summarization tool
 - Security scanning (dependencies + secrets)
 
-
-
+sase-dev-platform/
+│
+├── app.py                 # Sample Flask SASE service
+├── requirements.txt       # Python dependencies
+├── Dockerfile             # Container build definition
+├── docker-compose.yml     # Local dev orchestration
+├── Makefile               # Developer shortcuts
+│
+├── tests/                 # Unit tests (pytest)
+│   └── test_app.py
+│
+├── scripts/               # DevEx automation
+│   ├── repo_hygiene.py    # Dependency + vulnerability checks
+│   └── ai_pr_summary.py   # AI-based PR summarization (mock supported)
+│
+├── docs/                  # Generated documentation
+│   └── PR_SUMMARY.md
+│
+└── .github/workflows/
+    └── ci.yml             # CI pipeline (lint, test, security, AI, build)
