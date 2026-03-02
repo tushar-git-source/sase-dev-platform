@@ -50,6 +50,11 @@ def generate_ai_summary(diff):
 
 def main():
     os.makedirs("docs", exist_ok=True)
+    file_path = "docs/PR_SUMMARY.md"
+
+    if not os.path.exists(file_path):
+        with open(file_path, "w") as f:
+            f.write("# PR Summary Log\n")
 
     diff = get_git_diff()
 
