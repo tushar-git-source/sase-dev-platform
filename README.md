@@ -25,6 +25,7 @@ The solution consists of:
 - AI-based PR summarization tool
 - Security scanning (dependencies + secrets)
 
+'''
 sase-dev-platform/
 │
 ├── app.py                 # Sample Flask SASE service
@@ -45,3 +46,4 @@ sase-dev-platform/
 │
 └── .github/workflows/
     └── ci.yml             # CI pipeline (lint, test, security, AI, build)
+'''
