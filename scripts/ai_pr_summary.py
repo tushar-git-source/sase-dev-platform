@@ -71,7 +71,7 @@ def main():
         print("⚠ No API key found. Running in mock mode...")
         summary = generate_mock_summary(diff)
 
-    with open("docs/PR_SUMMARY.md", "w") as f:
+    with open(file_path, "a") as f:
         f.write(summary)
 
     print("✅ PR summary generated at docs/PR_SUMMARY.md")
