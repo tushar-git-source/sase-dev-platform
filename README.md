@@ -1,2 +1,26 @@
 # sase-dev-platform
-Reproducible VM-based local development environment simulating production-like networking topology for SASE core components, enabling stable onboarding, realistic traffic testing, and efficient debugging.
+# DevEx Platform Assignment – SASE Dev Environment
+
+This repository demonstrates a Developer Experience (DevEx) focused platform setup for a sample SASE core networking service.
+
+The goal of this project is to:
+
+- Provide a reproducible local development environment
+- Enforce code quality and security gates
+- Automate repository hygiene
+- Integrate AI-based workflow enhancement
+- Ensure CI/CD reliability with fail-fast design
+- Avoid hardcoded secrets and support mock mode
+
+---
+
+# 🏗 Architecture Overview
+
+The solution consists of:
+
+- Flask-based sample service (`app.py`)
+- Dockerized development environment
+- GitHub Actions CI pipeline
+- Repository hygiene automation
+- AI-based PR summarization tool
+- Security scanning (dependencies + secrets)
