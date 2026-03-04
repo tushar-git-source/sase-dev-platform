@@ -41,7 +41,6 @@ jobs:
 
       - name: Dependency vulnerability scan
         run: |
-          pip install pip-audit
           pip-audit
 
       - name: Secret scan
