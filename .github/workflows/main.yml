@@ -71,6 +71,7 @@ jobs:
 
   build:
     name: Build Docker Image
+    needs: validate
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
