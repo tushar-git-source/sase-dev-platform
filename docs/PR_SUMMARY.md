@@ -53,3 +53,12 @@ Changes detected in this PR.
 Total diff size: 47 lines.
 
 (This is mock mode — no API key provided.)
+
+# PR Summary (Mock Mode)
+
+Generated at: 2026-03-04 16:03:22.290212
+
+Changes detected in this PR.
+Total diff size: 11 lines.
+
+(This is mock mode — no API key provided.)
